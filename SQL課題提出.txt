@@ -1,0 +1,34 @@
+create table members (member_id integer, name text, division_id integer);
+
+create table divisions (division_id integer, division_name text);
+
+SELECT division_name,COUNT(division_name)FROM user GROUP BY count
+
+divisions
+
+divisions_en.csv
+
+members.csv
+
+members_en.csv
+
+\COPY members FROM 'members.csv' WITH CSV
+
+\COPY members FROM 'members.csv' WITH CSV
+
+\COPY divisions FROM 'divisions.csv' WITH CSV
+
+
+
+
+
+SELECT divisions.division_name, COUNT(*)
+
+FROM divisions
+
+JOIN members ON divisions.division_id = members.division_id
+
+GROUP BY divisions.division_name, members.division_id
+
+ORDER BY members.division_id;
+
